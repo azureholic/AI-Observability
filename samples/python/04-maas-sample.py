@@ -1,4 +1,4 @@
-import os, time
+import os
 from azure.ai.projects import AIProjectClient
 from azure.identity import AzureCliCredential
 from azure.ai.inference.models import UserMessage

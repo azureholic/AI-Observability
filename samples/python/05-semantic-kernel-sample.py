@@ -9,9 +9,6 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.trace.propagation.tracecontext import TraceContextTextMapPropagator
-from azure.monitor.opentelemetry.exporter import AzureMonitorTraceExporter
-from opentelemetry.trace.status import Status, StatusCode
 from opentelemetry.sdk.trace.sampling import ALWAYS_ON
 from opentelemetry.instrumentation.openai import OpenAIInstrumentor
 from azure.monitor.opentelemetry import configure_azure_monitor

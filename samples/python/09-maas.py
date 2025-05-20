@@ -1,5 +1,3 @@
-# pip install azure-ai-inference
-import os
 from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
 from dotenv import load_dotenv

@@ -2,9 +2,14 @@
 import os
 from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
+from dotenv import load_dotenv
+import os
+# Load environment variables from .env file
+load_dotenv()
 
-endpoint = "https://rbr-apim.azure-api.net/models/deployments/Phi-4-mini-instruct-rbr"
-api_key = "1f550e06a0c34c6bbe905384475a3a93"
+# gets API Key from environment variable OPENAI_API_KEY
+endpoint = os.environ.get("AZURE_AIGW_ENDPOINT")
+api_key = os.environ.get("AZURE_AIGW_API_KEY")
 
 if not api_key:
   raise Exception("A key should be provided to invoke the endpoint")

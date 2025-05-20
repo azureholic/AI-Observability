@@ -15,5 +15,5 @@ azure-search
 azure-search-documents
 openai
 opentelemetry-instrumentation-openai-v2
-opentelemetry-instrumentation-
+opentelemetry-instrumentation-openai
 azure-ai-evaluation

@@ -11,7 +11,7 @@ api_key = os.environ.get("AZURE_AIGW_API_KEY")
 client = AsyncAzureOpenAI(azure_endpoint = endpoint,api_key=api_key,api_version="2024-10-21")
 
 async def main() -> None:
-    for i in range(5):
+    for i in range(20):
         print("Iteration:", i)
         # Call the chat completion API
         response = await client.chat.completions.create(
